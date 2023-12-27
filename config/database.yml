@@ -13,4 +13,4 @@ test:
 
 production:
   <<: *default
-  database: <%= ENV['DATABASE_URL'].sub(/^.*\/(.+)$/, '\1') %>
+  database: postgres://yjgcdsbmjdpawg:7aea77342e3acb589e388016cb7af714d5a32eeaf0e41bac5cfd7514ecac6cba@ec2-3-232-218-211.compute-1.amazonaws.com:5432/ddioqna4f3m9cl
