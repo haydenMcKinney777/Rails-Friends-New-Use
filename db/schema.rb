@@ -10,11 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2023_12_25_045812) do
+ActiveRecord::Schema[7.1].define(version: 2023_12_27_080711) do
   create_table "friends", force: :cascade do |t|
     t.string "first_name"
     t.string "last_name"
-    t.integer "phone_number"
+    t.string "phone_number"
     t.string "email"
     t.string "instagram"
     t.datetime "created_at", null: false
