@@ -13,4 +13,4 @@ test:
 
 production:
   <<: *default
-  database: <%= ENV['DATABASE_URL'] %>
+  database: <%= ENV['DATABASE_URL'].sub(/^.*\/(.+)$/, '\1' %>
