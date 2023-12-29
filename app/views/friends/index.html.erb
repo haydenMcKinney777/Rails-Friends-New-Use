@@ -35,8 +35,16 @@
 
 <% else %>
 
-<h1>Welcome to the Home page!</h1>
-<p>You are currently signed out.</p>
+<div class="container">
+<div class="card">
+  <h2 class="card-header">Welcome to the Home page!</h2>
+  <div class="card-body">
+    <h5 class="card-title">Sign in to see your friends list!</h5>
+    <%= link_to "Register for an account", new_user_registration_path, class:"btn btn-secondary" %>
+    <%= link_to "Have an account? Login", new_user_session_path, class:"btn btn-secondary" %>
+  </div>
+  </div>
+</div>
 
 
 <% end %>

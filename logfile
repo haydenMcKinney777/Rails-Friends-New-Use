@@ -1,0 +1,8 @@
+2023-12-29 12:02:32.968 CST [14950] LOG:  starting PostgreSQL 14.10 (Homebrew) on aarch64-apple-darwin22.6.0, compiled by Apple clang version 14.0.3 (clang-1403.0.22.14.1), 64-bit
+2023-12-29 12:02:32.969 CST [14950] LOG:  could not bind IPv6 address "::1": Address already in use
+2023-12-29 12:02:32.969 CST [14950] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2023-12-29 12:02:32.969 CST [14950] LOG:  could not bind IPv4 address "127.0.0.1": Address already in use
+2023-12-29 12:02:32.969 CST [14950] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2023-12-29 12:02:32.969 CST [14950] WARNING:  could not create listen socket for "localhost"
+2023-12-29 12:02:32.969 CST [14950] FATAL:  could not create any TCP/IP sockets
+2023-12-29 12:02:32.969 CST [14950] LOG:  database system is shut down
