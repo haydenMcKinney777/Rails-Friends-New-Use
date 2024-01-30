@@ -8,14 +8,9 @@
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
       <% if user_signed_in?%>
-        <li class="nav-item">
-          <%= link_to "Add Friend", new_friend_path, class: "nav-link" %>
-        </li>
-      <% end %>
-
-
-
-        <% if user_signed_in?%>
+            <li class="nav-item">
+              <%= link_to "Add Friend", new_friend_path, class: "nav-link" %>
+            </li>
 
             <li class="nav-item">
               <%= button_to "Sign Out", destroy_user_session_path, method: :delete, class: "nav-link" %>
@@ -24,15 +19,7 @@
             <li class="nav-item">
               <%= link_to "Edit Profile", edit_user_registration_path, class: "nav-link" %>
             </li>
-        <% else %>
-            <li class="nav-item">
-              <%= link_to "Register", new_user_registration_path, class: "nav-link" %>
-            </li>
-
-            <li class="nav-item">
-              <%= link_to "Login", new_user_session_path, class: "nav-link" %>
-            </li>
-          <% end %>
+      <% end %>
       </ul>
       </ul>
     </div>
