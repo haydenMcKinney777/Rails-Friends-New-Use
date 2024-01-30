@@ -35,16 +35,19 @@
 
 <% else %>
 
-<div class="container">
-<div class="card">
-  <h2 class="card-header">Welcome to the Home page!</h2>
-  <div class="card-body">
-    <h5 class="card-title">Sign in to see your friends list!</h5>
-    <%= link_to "Register for an account", new_user_registration_path, class:"btn btn-secondary" %>
-    <%= link_to "Have an account? Login", new_user_session_path, class:"btn btn-secondary" %>
+  <div class="container">
+    <div class="text-secondary px-4 py-5 text-center">
+      <div class="py-5">
+        <h1 class="display-5 fw-bold text-black">Welcome Home.</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="fs-5 mb-4">To create or view your friends-list, please log in.</p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <%= button_to "Register for an account", new_user_registration_path, method: :get, class: "btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold", params: { class: 'btn btn-secondary' } %>
+            <%= button_to "Have an account? Login", new_user_session_path, method: :get, class: "btn btn-outline-dark btn-lg px-4", params: { class: 'btn btn-secondary' } %>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-  </div>
-</div>
-
 
 <% end %>
