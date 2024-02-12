@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Ready to customize your friends list, <%= @user.name %>?</h1>
+    <p>
+      You have successfully signed up to https://finalrailsfriends-c59453e19c2f.herokuapp.com/,
+      your username is: <%= @user.login %>.<br>
+    </p>
+    <p>
+      To login and create your friends list, just follow this link: <%= new_user_session_url %>.
+    </p>
+    <p>Thanks for joining and have a great day!</p>
+  </body>
+</html>
